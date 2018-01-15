@@ -5,13 +5,6 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System;
 
-public interface IObjectConverter
-{
-	string Serialize (object sourceObject);
-
-	object Deserialize (string sourceString);
-}
-
 public class ObjectConverterBase64 : IObjectConverter
 {
 	public string Serialize (object sourceObject)
